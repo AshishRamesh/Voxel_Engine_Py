@@ -8,6 +8,8 @@ class Textures:
 
         self.texture_0 = self.load('frame.png')
         self.texture_0.use(location=0)
+        print(self.ctx.error)  # Check if any OpenGL errors are raised.
+
 
     def load(self, file_name):
         texture = pg.image.load(f'assets/{file_name}')
@@ -20,5 +22,7 @@ class Textures:
         )
         texture.anisotropy = 32.0
         texture.build_mipmaps()
-        texture.filter = (mgl.LINEAR_MIPMAP_LINEAR ,mgl.LINEAR)
+        texture.filter = (mgl.LINEAR ,mgl.LINEAR)
+        print(self.ctx.error)  # Check if any OpenGL errors are raised.
+
         return texture

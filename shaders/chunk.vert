@@ -12,7 +12,7 @@ out vec3 voxel_color;
 out vec2 uv;
 
 const vec2 uv_coords[4] = vec2[4](
-    vec2(0, 0), vec2(0,1),
+    vec2(0, 0), vec2(0, 1),
     vec2(1, 0), vec2(1, 1)
 );
 
