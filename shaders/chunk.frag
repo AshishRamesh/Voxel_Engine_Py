@@ -18,6 +18,6 @@ void main(){
 
 
     tex_col = pow(tex_col, inv_gamma);
-    fragColor = vec4(tex_col, 1.0);
+    fragColor = vec4(voxel_color, 1.0);
     
 }
